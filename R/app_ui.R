@@ -21,7 +21,7 @@ app_ui <- function(request) {
     dashboardPage(
       header = dashboardHeader(
         dashboardBrand(
-          title = "My dashboard",
+          title = "My Dashboard",
           color = "primary")
         ),
       sidebar = dashboardSidebar(),
