@@ -2,17 +2,32 @@
 #' 
 #' @param request Internal parameter for `{shiny}`. 
 #'     DO NOT REMOVE.
-#' @import shiny
+#' @import shiny bs4Dash
 #' @noRd
+# app_ui <- function(request) {
+#   tagList(
+#     # Leave this function for adding external resources
+#     golem_add_external_resources(),
+#     # Your application UI logic 
+#     fluidPage(
+#       h1("ShinyTemp2")
+#     )
+#   )
+# }
 app_ui <- function(request) {
-  tagList(
     # Leave this function for adding external resources
-    golem_add_external_resources(),
+    golem_add_external_resources()
     # Your application UI logic 
-    fluidPage(
-      h1("ShinyTemp2")
-    )
-  )
+    dashboardPage(
+      header = dashboardHeader(
+        dashboardBrand(
+          title = "My dashboard",
+          color = "primary")
+        ),
+      sidebar = dashboardSidebar(),
+      body = dashboardBody(),
+      controlbar = dashboardControlbar(),
+      title = "Dashboard Page")
 }
 
 #' Add external Resources to the Application
