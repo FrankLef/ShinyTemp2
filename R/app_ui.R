@@ -19,15 +19,18 @@ app_ui <- function(request) {
     golem_add_external_resources()
     # Your application UI logic 
     dashboardPage(
+      title = "Dashboard Page",
       header = dashboardHeader(
         dashboardBrand(
-          title = "My Dashboard",
+          title = "Dashboard Header",
           color = "primary")
         ),
       sidebar = dashboardSidebar(),
       body = dashboardBody(),
       controlbar = dashboardControlbar(),
-      title = "Dashboard Page")
+      footer = dashboardFooter(),
+      fullscreen = FALSE
+      )
 }
 
 #' Add external Resources to the Application
