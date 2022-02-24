@@ -6,6 +6,7 @@ Description: Shiny template using bs4Dash.
 License: MIT + file LICENSE
 Imports: 
     attempt,
+    bs4Dash,
     config (>= 0.3.1),
     DT,
     glue,
