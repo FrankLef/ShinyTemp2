@@ -1,4 +1,13 @@
+inst/doc
+docs
+inst/rstudio/.DS_Store
+**/.DS_Store
+*.DS_Store
 .Rproj.user
 .Rhistory
 .RData
-.Ruserdata
+doc
+Meta
+revdep/
+/doc/
+/Meta/
