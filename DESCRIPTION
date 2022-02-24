@@ -1,17 +1,21 @@
 Package: ShinyTemp2
-Title: An Amazing Shiny App
+Title: Shiny Tempalte with bs4Dash
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "firstname",
-           family = "lastname",
-           role = c("aut", "cre"),
-           email = "your@email.com")
-Description: What the package does (one paragraph).
-License: What license is it under?
+Authors@R: person('François', 'Lefebvre', email = 'flefebvre01@hotmail.com', role = c('cre', 'aut'))
+Description: Shiny template using bs4Dash.
+License: MIT + file LICENSE
 Imports: 
+    attempt,
     config (>= 0.3.1),
+    DT,
+    glue,
     golem (>= 0.3.1),
+    htmltools,
+    rlang,
     shiny (>= 1.7.1)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
